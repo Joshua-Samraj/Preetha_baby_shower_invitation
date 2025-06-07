@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -23,7 +23,11 @@
 <div class="stars-fg"></div>
 
     <button id="music-btn">Play Music</button>
-    <audio id="audio" src="KANNATHIL MUTHAMITTAL SABAREESH PRABHAKERBabe.mp3"></audio>
+    <!-- <audio autoplay id="audio" src="KANNATHIL MUTHAMITTAL SABAREESH PRABHAKERBabe.mp3"></audio> -->
+    <audio autoplay id="audio" loop unmuted>
+        <source src="KANNATHIL MUTHAMITTAL SABAREESH PRABHAKERBabe.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
 
     <div class="container">
         <img src="IMG_1309.JPG" alt="Profile Picture" class="profile-img" />
@@ -68,7 +72,7 @@
 
         <!-- Modal for E-Invitation -->
         <div id="modal" class="modal">
-            <div class="modal-content">
+            <div class="modal-content" >
                 <span class="close" id="closeModal">&times;</span>
                 <img src="Pink and Brown Illustrative Baby Shower Invitation.jpg" alt="E-Invitation" class="modal-img_2" />
             </div>
