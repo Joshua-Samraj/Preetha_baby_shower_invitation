@@ -167,6 +167,24 @@ img {
 .modal-content {
     position: relative;
     background: white;
+    /* margin: 10% auto; */
+    margin-left: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    
+    
+    
+    /* max-width: 500px; */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    animation: slideDown 0.5s ease-in-out;
+}
+
+@media (max-width: 500px) {
+    .modal-content {
+    position: relative;
+    background: white;
     margin: 10% auto;
     padding: 20px;
     border-radius: 10px;
@@ -178,6 +196,8 @@ img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     animation: slideDown 0.5s ease-in-out;
 }
+}
+
 .slider {
     position: relative;
     width: 100%;
