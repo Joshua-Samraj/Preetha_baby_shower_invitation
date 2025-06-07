@@ -1,0 +1,441 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    /* Gold to black gradient */
+    background: linear-gradient(to bottom, #EB922A, #000000);
+    margin: 0;
+    padding: 20px;
+}
+    
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    background: #EFE9E0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.Float.image {
+  float: right;          /* Float image to the right side */
+  width: 200px;          /* Adjust size to fit the phone screen */
+  height: auto;          /* Maintain aspect ratio */
+  border-radius: 20px;   /* Optional: rounded corners to mimic phone screen */
+  box-shadow: 0 0 10px rgba(0,0,0,0.3); /* subtle shadow for depth */
+  margin: 10px 0 10px 20px; /* margin: top/right/bottom/left */
+  object-fit: cover;     /* Crop or scale image nicely */
+}
+
+
+.icon_y {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.icon_i {
+    width: 30px;  /* Adjust size as needed */
+    height: 30px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* Prevent image dragging */
+img {
+    pointer-events: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+.upi-section {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.upi-qr {
+    width: 150px;
+    height: 150px;
+    margin: 10px auto;
+    display: block;
+}
+
+
+.upi-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25d366; /* WhatsApp-like green */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.upi-btn:hover {
+    background-color: #1da851;
+}
+
+.profile-img {
+    width: 250px;
+    height: 400px;
+    border-radius: 5%;
+    object-fit: cover;
+    align-content: center;
+    box-shadow: #000000 0px 0px 10px;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), border-radius 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.profile-img:hover {
+    transform: rotateY(180deg); /* Rotate 180 degrees horizontally */
+    border-radius: 50%;
+}
+
+
+
+.subtitle_1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight:bolder;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #EB922A;
+    
+    /* text-shadow: #000000 0px px 0px; */
+    
+
+
+}
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.subtitle {
+    font-family: Arial, sans-serif;
+    
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+.btn {
+    display: block;
+    background: black;
+    color:#EB922A;
+    /* padding: 15px; */
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: #EB922A 0px 0px 10px;
+    transition: background 0.3s ease;
+    animation: glow 1s infinite alternate;
+}
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 20px #EB922A;
+    }
+}
+
+.btn_1 {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #ff0000; /* YouTube red */
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.btn:hover {
+    background: #f0f0f0;
+    color: #000000;
+
+}
+
+
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    height: 150%;
+    background-color: rgba(255, 0, 0, 0.7);
+    animation: fadeIn 0.5s ease-in-out;
+}
+.fevicon {
+    border-radius: 50%;
+}
+.modal-content {
+    position: relative;
+    background: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    
+    
+    /* max-width: 500px; */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    animation: slideDown 0.5s ease-in-out;
+}
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    object-fit: contain;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.slide {
+    width: 100%;
+    object-fit: contain;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.modal-img_2 {
+    width: 100%;
+    height: auto;
+    max-width: 800px; /* Set maximum width */
+    max-height: 90vh; /* Prevent overflow on smaller screens */
+    border-radius: 10px;
+}
+.modal-img_1 {
+    width: 50%;  /* Adjust width as needed */
+    max-width: 1000px;  /* Set a maximum width */
+    height: auto;  /* Maintain aspect ratio */
+    display: block;  /* Center alignment */
+    margin: 0 auto;  /* Center horizontally */
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Modal for Google Map */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    animation: fadeIn 0.5s ease-in-out;
+}
+.slider-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.modal-content_2 {
+    position: relative;
+    background: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    animation: slideDown 0.5s ease-in-out;
+    
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* ========================================== */
+
+.copy-btn {
+    background: #008CBA;
+    color: white;
+    border: none;
+    padding: 3px 6px;  /* Reduced padding */
+    font-size: 12px;   /* Smaller font size */
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.copy-btn:hover {
+    background: #005f75;
+}
+
+.copy-text {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+/* Background stars */
+/* Common styles for star layers */
+.stars-bg, .stars-fg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: -2; /* behind content */
+}
+
+.stars-fg {
+  z-index: 2; /* in front of content */
+}
+
+/* Glow and twinkle keyframes */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.8; filter: drop-shadow(0 0 4px rgba(255,255,255,0.6)); }
+  50% { opacity: 1; filter: drop-shadow(0 0 8px rgba(255,255,255,1)); }
+}
+
+/* Falling animation from top to bottom */
+@keyframes fall-bg {
+  0% {
+    transform: translateY(-20vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+}
+
+@keyframes fall-fg {
+  0% {
+    transform: translateY(-15vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(120vh);
+    opacity: 0;
+  }
+}
+
+
+
+
+/* Background stars style */
+.stars-bg::before {
+  content: '';
+  position: absolute;
+  top: -10px; left: 0;
+  width: 20px; height: 20px;
+  background: white;
+  border-radius: 50%;
+
+  box-shadow:
+    10vw 10vh white,
+    20vw 40vh white,
+    30vw 15vh white,
+    40vw 80vh white,
+    50vw 30vh white,
+    60vw 70vh white,
+    70vw 45vh white,
+    80vw 60vh white,
+    90vw 20vh white,
+    95vw 75vh white;
+
+  animation: fall-bg 10s linear infinite, twinkle 3s ease-in-out infinite;
+
+  /* Add blur and glow */
+  filter:
+    blur(3px)           /* soft blur around stars */
+    drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)); /* white glow */
+}
+
+/* Foreground stars style (bigger and brighter) */
+.stars-fg::before {
+  content: '';
+  position: absolute;
+  top: -10px; left: 0;
+  width: 3px; height: 3px;
+  background: white;
+  border-radius: 50%;
+  box-shadow:
+    15vw 5vh white,
+    25vw 30vh white,
+    35vw 60vh white,
+    45vw 10vh white,
+    55vw 50vh white,
+    65vw 20vh white,
+    75vw 70vh white,
+    85vw 40vh white,
+    95vw 80vh white;
+  animation: fall-fg 5s linear infinite, twinkle 2s ease-in-out infinite;
+  filter: drop-shadow(0 0 8px rgba(255,255,255,0.8));
+}
+
+
+
