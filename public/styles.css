@@ -5,6 +5,11 @@ body {
     background: linear-gradient(to bottom, #EB922A, #000000);
     margin: 0;
     padding: 20px;
+    background-attachment: fixed;
+
+
+    
+
 }
     
 
@@ -16,30 +21,11 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.Float.image {
-  float: right;          /* Float image to the right side */
-  width: 200px;          /* Adjust size to fit the phone screen */
-  height: auto;          /* Maintain aspect ratio */
-  border-radius: 20px;   /* Optional: rounded corners to mimic phone screen */
-  box-shadow: 0 0 10px rgba(0,0,0,0.3); /* subtle shadow for depth */
-  margin: 10px 0 10px 20px; /* margin: top/right/bottom/left */
-  object-fit: cover;     /* Crop or scale image nicely */
-}
 
 
-.icon_y {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-    margin-right: 8px;
-}
 
-.icon_i {
-    width: 30px;  /* Adjust size as needed */
-    height: 30px;
-    margin-right: 5px;
-    vertical-align: middle;
-}
+
+
 
 /* Prevent image dragging */
 img {
@@ -94,7 +80,7 @@ img {
 
 .subtitle_1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
+    font-size: 13px;
     font-weight:bolder;
     margin-top: 10px;
     margin-bottom: 5px;
@@ -436,7 +422,6 @@ button:hover {
   animation: fall-fg 5s linear infinite, twinkle 2s ease-in-out infinite;
   filter: drop-shadow(0 0 8px rgba(255,255,255,0.8));
 }
-
 
 
 
