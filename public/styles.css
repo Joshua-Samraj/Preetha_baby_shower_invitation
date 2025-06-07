@@ -4,7 +4,7 @@ body {
     /* Gold to black gradient */
     background: linear-gradient(to bottom, #EB922A, #000000);
     margin: 0;
-    padding: 20px;
+    /* padding: 20px; */
 }
     
 
@@ -436,6 +436,7 @@ button:hover {
   animation: fall-fg 5s linear infinite, twinkle 2s ease-in-out infinite;
   filter: drop-shadow(0 0 8px rgba(255,255,255,0.8));
 }
+
 
 
 
