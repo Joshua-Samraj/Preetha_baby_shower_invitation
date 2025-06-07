@@ -9,9 +9,8 @@ function playMusic() {
     audio.play().then(() => {
         isPlaying = true;
         musicBtn.textContent = "Pause Music";
-    }).catch((error) => {
-        console.log("Playback failed or blocked:", error);
     });
+    // Removed the catch block that logged playback errors
 }
 
 // Pause music function
