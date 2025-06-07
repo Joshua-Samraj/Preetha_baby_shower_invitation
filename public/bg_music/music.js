@@ -1,7 +1,7 @@
 const musicBtn = document.getElementById("music-btn");
 const audio = document.getElementById("audio");
 
-let isPlaying = false; // Music starts paused
+let isPlaying = true; // Music starts paused
 let userInteracted = false; // Track if the user has interacted
 // musicBtn.textContent = "Touch here to stop music";
 // Play music function
