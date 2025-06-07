@@ -1,13 +1,13 @@
 const musicBtn = document.getElementById("music-btn");
 const audio = document.getElementById("audio");
 
-let isPlaying = true; // Music starts paused
+let isPlaying = false; // Music starts paused
 let userInteracted = false; // Track if the user has interacted
-
+// musicBtn.textContent = "Touch here to stop music";
 // Play music function
 function playMusic() {
     audio.play().then(() => {
-        isPlaying = true;
+        isPlaying = false;
         musicBtn.textContent = "Pause Music";
     });
     // Removed the catch block that logged playback errors
@@ -16,7 +16,7 @@ function playMusic() {
 // Pause music function
 function pauseMusic() {
     audio.pause();
-    isPlaying = false;
+    isPlaying = true;
     musicBtn.textContent = "Play Music";
 }
 
@@ -39,9 +39,9 @@ musicBtn.addEventListener("click", () => {
     }
 
     if (isPlaying) {
-        pauseMusic();
-    } else {
         playMusic();
+    } else {
+        pauseMusic();
     }
 });
 
